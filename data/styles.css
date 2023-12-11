@@ -1,0 +1,89 @@
+.body {
+    display: grid;
+    background-color: rgb(14, 14, 14);
+    justify-items: center;
+}
+
+    .main {
+        display: block;
+        width: 1800px;        
+        /* remove later */
+        background-color: rgb(255, 255, 255);
+    }
+
+        .title-block {
+            display: flex;
+            height: 270px;
+            background-color: #1f2937;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 180px;
+            gap: 200px;
+            justify-content: space-between;
+        }   
+
+            .title-signup {
+                flex: 1;
+                width: 200px;
+                color: antiquewhite;
+            }
+
+                .title-text {
+                    text-align: left;
+                    font-size: 48px;
+                    font-weight: 900;
+                    color: #f9faf8;
+                    font-family:Arial, Helvetica, sans-serif;                   
+                }
+
+                .title-subtext {
+                    text-align: left;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #e5e7eb
+                }
+
+            .image-placeholder {
+                flex: 1;
+                display: flex;
+                height: 300px;
+                background-color: rgb(107, 107, 107);
+                justify-content: center;
+                align-items: center;          
+            }
+
+            img {
+                border-radius: 50px;
+            }
+      
+        .random-info-block {
+            display: grid;
+            height: 350px;
+            background-color: white;
+            justify-items: center;
+        }
+
+            .random-info {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 36px;               
+            }
+
+            .image-box {
+                display: flex;
+                gap: 20px;
+            }
+
+                .square {
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 8px;
+                    border-color: #3882f6;
+                    border-width: 4px;
+                    border-style: solid;
+                }
+
+                .square-text {
+                    color: #8d8d8d;
+                    text-align: center;
+                    width: 150px;
+                    font-size: 20px;
+                }
+
