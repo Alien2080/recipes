@@ -56,7 +56,7 @@
       
         .random-info-block {
             display: grid;
-            height: 350px;
+            height: auto;
             background-color: white;
             justify-items: center;
         }
