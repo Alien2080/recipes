@@ -72,6 +72,19 @@ footer {
     color: #fff; /* Light text for dark background */
 }
 
+footer a {
+    background-color: #333; /* Dark background for visibility */
+    color: #fff; /* Light text color */
+    padding: 8px 15px; /* Padding for size */
+    text-decoration: none; /* Removes underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    background-color: #555; /* Slightly lighter color on hover */
+}
+
 .recipe-card {
     text-align: center;
     margin-bottom: 20px;
