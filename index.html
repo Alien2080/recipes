@@ -1,72 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
-    <link rel="stylesheet" href=".\data\styles.css" />
+    <link rel="stylesheet" href="./data/styles.css">
 </head>
-
-<body class="body">
-    <div class="main">
-        <div class="title-block">
-            <div class="title-signup">
-                <h1 class="title-text">Alien2080's recipes</h1>
-                <p class="title-subtext">Just some recipes I use, put together for my convenience</p>
-            </div>
-            <div class="image-placeholder">
-                <img class="big-image" src=".\images\chicken_curry.png">
-            </div>
-        </div>
-
-        <div class="random-info-block">
-            <h2 class="random-info">Recipes.</h2>
-            <div class="image-box">
-                <div class="box">
-                    <a href=".\recipes\chicken_curry.html">
-                        <div class="square">
-                            <img class="small-image" src=".\images\chicken_curry.png">
-                        </div>
-                    </a>
-                    <p class="square-text">chicken curry.</p>
-                </div>
-                <div class="box">
-                    <a href=".\recipes\beef_bolognese.html">
-                        <div class="square">
-                            <img class="small-image" src=".\images\beef_bolognese.png">
-                        </div>
-                    </a>
-                    <p class="square-text">beef bolognese.</p>
-                </div>
-                <div class="box">
-                    <a href=".\recipes\chicken_schnitzel.html">
-                        <div class="square">
-                            <img class="small-image" src=".\images\chicken_schnitzel.png">
-                        </div>
-                    </a>
-                    <p class="square-text">chicken schnitzel + mash + veggies.</p>
-                </div>
-                <div class="box">
-                    <a href=".\recipes\tuna_mornay.html">
-                        <div class="square">
-                            <img class="small-image" src=".\images\tuna_mornay.png">
-                        </div>
-                    </a>
-                    <p class="square-text">tuna mornay.</p>
-                </div>
-                <div class="box">
-                    <a href=".\recipes\beef_stir_fry.html">
-                        <div class="square">
-                            <img class="small-image" src=".\images\beef_stir_fry.png">
-                        </div>
-                    </a>
-                    <p class="square-text">beef stir-fry.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./recipes/chicken_curry.html">Chicken Curry</a></li>
+                <li><a href="./recipes/beef_bolognese.html">Beef Bolognese</a></li>
+                <li><a href="./recipes/chicken_schnitzel.html">Chicken Schnitzel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="recipe-card">
+            <a href="./recipes/chicken_curry.html">
+                <img src="./images/chicken_curry.png" alt="Chicken Curry">
+                <h3>Chicken Curry</h3>
+            </a>
+        </section>
+        <section class="recipe-card">
+            <a href="./recipes/beef_bolognese.html">
+                <img src="./images/beef_bolognese.png" alt="Beef Bolognese">
+                <h3>Beef Bolognese</h3>
+            </a>
+        </section>
+        <section class="recipe-card">
+            <a href="./recipes/chicken_schnitzel.html">
+                <img src="./images/chicken_schnitzel.png" alt="Chicken Schnitzel">
+                <h3>Chicken Schnitzel</h3>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Recipes. All rights reserved.</p>
+    </footer>
+    <script src="./data/recipes.js"></script>
 </body>
-
 </html>

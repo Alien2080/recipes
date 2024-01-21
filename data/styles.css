@@ -1,96 +1,105 @@
-.body {
-    display: grid;
-    background-color: rgb(14, 14, 14);
-    justify-items: center;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eaeaea; /* Slightly darker background */
+    color: #333; /* Darker text color for better contrast */
 }
 
-    .main {
-        display: block;
-        width: 1800px;        
-        /* remove later */
-        background-color: rgb(255, 255, 255);
-    }
+header {
+    background-color: #444; /* Darker header */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Stronger shadow for depth */
+    color: #fff; /* Light text for dark background */
+}
 
-        .title-block {
-            display: flex;
-            height: 270px;
-            background-color: #1f2937;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            padding: 180px;
-            gap: 200px;
-            justify-content: space-between;
-        }   
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
 
-            .title-signup {
-                flex: 1;
-                width: 200px;
-                color: antiquewhite;
-            }
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-                .title-text {
-                    text-align: left;
-                    font-size: 48px;
-                    font-weight: 900;
-                    color: #f9faf8;
-                    font-family:Arial, Helvetica, sans-serif;                   
-                }
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Light text for dark background */
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 1.1em; /* Slightly larger font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
 
-                .title-subtext {
-                    text-align: left;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: #e5e7eb
-                }
+nav ul li a:hover {
+    background-color: #666; /* Dark hover background */
+    color: #fff; /* Ensuring text is visible on hover */
+    border-radius: 4px; /* Rounded corners for modern look */
+}
 
-            .image-placeholder {
-                flex: 1;
-                display: flex;
-                height: 300px;
-                background-color: rgb(107, 107, 107);
-                justify-content: center;
-                align-items: center;          
-            }
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #3b3b3b; /* Lighter than body for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Stronger shadow for depth */
+    color: #fff; /* Light text for dark background */
+}
 
-            .big-image {
-                border-radius: 50px;
-            }
-      
-        .random-info-block {
-            display: grid;
-            height: auto;
-            background-color: white;
-            justify-items: center;
-        }
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-            .random-info {
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 36px;               
-            }
+.ingredients, .method {
+    text-align: left;
+    margin-top: 20px;
+}
 
-            .image-box {
-                display: flex;
-                gap: 20px;
-            }
+footer {
+    background-color: #444; /* Darker footer */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* Stronger shadow for depth */
+    color: #fff; /* Light text for dark background */
+}
 
-                .square {
-                    height: auto;
-                    width: auto;
-                    border-radius: 8px;
-                    border-color: #3882f6;
-                    border-width: 4px;
-                    border-style: solid;
-                    align-items: center;
-                }
+.recipe-card {
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the image and text are contained within the border-radius */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds depth */
+}
 
-                    .small-image {
-                        height: auto;
-                        width: 148px;
-                        border-radius: 8px;
-                    }
+.recipe-card a {
+    display: block; /* Makes the entire area clickable */
+    text-decoration: none;
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Light background for the link */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    padding: 10px; /* Padding for spacing */
+}
 
-                .square-text {
-                    color: #8d8d8d;
-                    text-align: center;
-                    width: 150px;
-                    font-size: 20px;
-                }
+.recipe-card a:hover {
+    background-color: #666; /* Darker background on hover */
+    color: #fff; /* Ensuring text is visible on hover */
+}
 
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Adds a separator between image and text */
+}
+
+.recipe-card h3 {
+    margin: 10px 0; /* Adds spacing above and below the title */
+}
