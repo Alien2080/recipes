@@ -1,12 +1,12 @@
 const staticDevCoffee = "aliens-recipes-v1";
 const assets = [
-  "/",
-  "/index.html",
-  "/data/styles.css",
-  "/data/recipes.js",
-  "/images/beef_bolognese.png",
-  "/images/chicken_curry.png",
-  "/images/chicken_schnitzel"
+  "./",
+  "./index.html",
+  "./data/styles.css",
+  "./data/recipes.js",
+  "./images/beef_bolognese.png",
+  "./images/chicken_curry.png",
+  "./images/chicken_schnitzel"
 ];
 
 self.addEventListener("install", installEvent => {
